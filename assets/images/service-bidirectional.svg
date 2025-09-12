@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="bidirectionalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="40" cy="40" r="35" fill="url(#bidirectionalGradient)" opacity="0.1" />
+  
+  <!-- 左侧手机 -->
+  <rect x="15" y="25" width="20" height="30" rx="3" ry="3" fill="url(#bidirectionalGradient)" />
+  <rect x="17" y="28" width="16" height="20" fill="white" />
+  <circle cx="25" cy="51" r="2" fill="white" />
+  
+  <!-- 右侧手机 -->
+  <rect x="45" y="25" width="20" height="30" rx="3" ry="3" fill="url(#bidirectionalGradient)" />
+  <rect x="47" y="28" width="16" height="20" fill="white" />
+  <circle cx="55" cy="51" r="2" fill="white" />
+  
+  <!-- 双向箭头 -->
+  <g fill="url(#bidirectionalGradient)">
+    <!-- 向右箭头 -->
+    <path d="M 35,35 L 42,35 L 39,32 M 42,35 L 39,38" stroke="url(#bidirectionalGradient)" stroke-width="2" fill="none" stroke-linecap="round" />
+    
+    <!-- 向左箭头 -->
+    <path d="M 45,45 L 38,45 L 41,42 M 38,45 L 41,48" stroke="url(#bidirectionalGradient)" stroke-width="2" fill="none" stroke-linecap="round" />
+  </g>
+  
+  <!-- 消息气泡 -->
+  <g transform="translate(25, 35)">
+    <rect x="-6" y="-3" width="12" height="6" rx="3" fill="#10b981" />
+    <text x="0" y="1" text-anchor="middle" font-size="4" fill="white">Hi</text>
+  </g>
+  
+  <g transform="translate(55, 42)">
+    <rect x="-8" y="-3" width="16" height="6" rx="3" fill="#f59e0b" />
+    <text x="0" y="1" text-anchor="middle" font-size="4" fill="white">Reply</text>
+  </g>
+  
+  <!-- 全球连接图标 -->
+  <g transform="translate(40, 15)">
+    <circle cx="0" cy="0" r="6" fill="none" stroke="url(#bidirectionalGradient)" stroke-width="1" />
+    <path d="M -6,0 Q 0,-3 6,0 M -6,0 Q 0,3 6,0" stroke="url(#bidirectionalGradient)" stroke-width="1" fill="none" />
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="url(#bidirectionalGradient)" stroke-width="1" />
+  </g>
+</svg>

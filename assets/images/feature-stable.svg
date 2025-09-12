@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <linearGradient id="stableGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 盾牌主体 -->
+  <path d="M 30,5 L 45,15 L 45,35 Q 45,45 30,55 Q 15,45 15,35 L 15,15 Z" fill="url(#stableGradient)" />
+  
+  <!-- 盾牌边框 -->
+  <path d="M 30,5 L 45,15 L 45,35 Q 45,45 30,55 Q 15,45 15,35 L 15,15 Z" 
+        fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3" />
+  
+  <!-- 检查标记 -->
+  <path d="M 22,28 L 28,34 L 38,22" 
+        stroke="#ffffff" stroke-width="3" fill="none" 
+        stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 稳定性指示器 -->
+  <g transform="translate(30, 45)">
+    <!-- 信号强度条 -->
+    <rect x="-8" y="2" width="2" height="4" fill="#ffffff" opacity="0.8" />
+    <rect x="-5" y="0" width="2" height="6" fill="#ffffff" opacity="0.8" />
+    <rect x="-2" y="-2" width="2" height="8" fill="#ffffff" opacity="0.8" />
+    <rect x="1" y="-4" width="2" height="10" fill="#ffffff" opacity="0.8" />
+    <rect x="4" y="-2" width="2" height="8" fill="#ffffff" opacity="0.8" />
+    <rect x="7" y="0" width="2" height="6" fill="#ffffff" opacity="0.8" />
+  </g>
+  
+  <!-- 99.9%标识 -->
+  <text x="30" y="18" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="6" font-weight="bold" fill="#ffffff">99.9%</text>
+</svg>

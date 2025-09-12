@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <linearGradient id="apiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 代码窗口 -->
+  <rect x="10" y="15" width="40" height="30" rx="3" ry="3" 
+        fill="url(#apiGradient)" />
+  
+  <!-- 窗口标题栏 -->
+  <rect x="10" y="15" width="40" height="8" rx="3" ry="3" 
+        fill="url(#apiGradient)" opacity="0.8" />
+  
+  <!-- 窗口控制按钮 -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="15" cy="19" r="1.5" />
+    <circle cx="19" cy="19" r="1.5" />
+    <circle cx="23" cy="19" r="1.5" />
+  </g>
+  
+  <!-- 代码内容 -->
+  <g fill="#ffffff" font-family="monospace" font-size="4">
+    <text x="13" y="28">POST /api/sms</text>
+    <text x="13" y="33">{"to":"+1234567890",</text>
+    <text x="13" y="38"> "message":"Hello"}</text>
+  </g>
+  
+  <!-- API连接线 -->
+  <g stroke="url(#apiGradient)" stroke-width="2" fill="none">
+    <!-- 输入箭头 -->
+    <path d="M 5,30 L 10,30" stroke-linecap="round" />
+    <path d="M 7,27 L 10,30 L 7,33" stroke-linecap="round" />
+    
+    <!-- 输出箭头 -->
+    <path d="M 50,30 L 55,30" stroke-linecap="round" />
+    <path d="M 53,27 L 55,30 L 53,33" stroke-linecap="round" />
+  </g>
+  
+  <!-- 数据节点 -->
+  <g fill="url(#apiGradient)">
+    <circle cx="5" cy="30" r="3" />
+    <circle cx="55" cy="30" r="3" />
+  </g>
+  
+  <!-- 编程语言标识 -->
+  <g transform="translate(30, 50)" text-anchor="middle">
+    <rect x="-15" y="-3" width="30" height="6" rx="3" 
+          fill="url(#apiGradient)" opacity="0.2" />
+    <text x="-8" y="1" font-family="Arial" font-size="5" fill="url(#apiGradient)">PHP</text>
+    <text x="0" y="1" font-family="Arial" font-size="5" fill="url(#apiGradient)">JS</text>
+    <text x="8" y="1" font-family="Arial" font-size="5" fill="url(#apiGradient)">PY</text>
+  </g>
+  
+  <!-- 齿轮图标 -->
+  <g transform="translate(45, 10)" fill="url(#apiGradient)" opacity="0.6">
+    <circle cx="0" cy="0" r="4" />
+    <path d="M -2,-4 L 2,-4 L 2,-6 L -2,-6 Z" />
+    <path d="M 4,-2 L 4,2 L 6,2 L 6,-2 Z" />
+    <path d="M 2,4 L -2,4 L -2,6 L 2,6 Z" />
+    <path d="M -4,2 L -4,-2 L -6,-2 L -6,2 Z" />
+    <circle cx="0" cy="0" r="1.5" fill="#ffffff" />
+  </g>
+</svg>

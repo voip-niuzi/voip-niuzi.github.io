@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+    <defs>
+        <linearGradient id="voiceNotifyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <circle cx="40" cy="40" r="35" fill="url(#voiceNotifyGradient)" opacity="0.1" />
+    <path d="M 20,35 L 30,25 L 50,25 L 50,55 L 30,55 L 20,45 Z" fill="url(#voiceNotifyGradient)" />
+    <path d="M 50,25 L 65,15 L 65,65 L 50,55 Z" fill="url(#voiceNotifyGradient)" opacity="0.8" />
+    <g stroke="url(#voiceNotifyGradient)" stroke-width="2" fill="none" opacity="0.6">
+        <path d="M 68,30 Q 73,40 68,50" />
+        <path d="M 71,25 Q 78,40 71,55" />
+    </g>
+    <circle cx="15" cy="15" r="8" fill="#f59e0b" />
+    <text x="15" y="19" text-anchor="middle" font-size="8" fill="white">!</text>
+</svg>

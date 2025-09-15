@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+    <defs>
+        <linearGradient id="voiceVerifyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <circle cx="40" cy="40" r="35" fill="url(#voiceVerifyGradient)" opacity="0.1" />
+    <rect x="25" y="20" width="30" height="40" rx="5" fill="url(#voiceVerifyGradient)" />
+    <rect x="28" y="25" width="24" height="25" fill="white" />
+    <circle cx="40" cy="55" r="3" fill="white" />
+    <g transform="translate(40, 37)" fill="url(#voiceVerifyGradient)">
+        <circle cx="0" cy="0" r="3" />
+        <path d="M -8,-8 A 11.31,11.31 0 0,1 8,-8" stroke="url(#voiceVerifyGradient)" stroke-width="2" fill="none" />
+        <path d="M -12,-12 A 16.97,16.97 0 0,1 12,-12" stroke="url(#voiceVerifyGradient)" stroke-width="2" fill="none" opacity="0.7" />
+    </g>
+    <text x="40" y="32" text-anchor="middle" font-size="6" fill="url(#voiceVerifyGradient)">验证码</text>
+</svg>

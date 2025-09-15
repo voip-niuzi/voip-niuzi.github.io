@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+    <defs>
+        <linearGradient id="groupCallGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <circle cx="40" cy="40" r="35" fill="url(#groupCallGradient)" opacity="0.1" />
+    
+    <!-- 中央扬声器 -->
+    <path d="M 30,30 L 40,25 L 50,30 L 50,50 L 40,55 L 30,50 Z" fill="url(#groupCallGradient)" />
+    <path d="M 50,30 L 60,20 L 60,60 L 50,50 Z" fill="url(#groupCallGradient)" opacity="0.8" />
+    
+    <!-- 声波扩散 -->
+    <g stroke="url(#groupCallGradient)" stroke-width="2" fill="none" opacity="0.6">
+        <path d="M 62,35 Q 67,40 62,45" />
+        <path d="M 65,30 Q 72,40 65,50" />
+        <path d="M 68,25 Q 77,40 68,55" />
+    </g>
+    
+    <!-- 多个用户图标 -->
+    <g fill="url(#groupCallGradient)" opacity="0.7">
+        <!-- 用户1 -->
+        <circle cx="15" cy="25" r="6" />
+        <path d="M 8,35 Q 15,32 22,35 L 22,40 L 8,40 Z" />
+        
+        <!-- 用户2 -->
+        <circle cx="15" cy="55" r="6" />
+        <path d="M 8,65 Q 15,62 22,65 L 22,70 L 8,70 Z" />
+        
+        <!-- 用户3 -->
+        <circle cx="65" cy="15" r="6" />
+        <path d="M 58,25 Q 65,22 72,25 L 72,30 L 58,30 Z" />
+        
+        <!-- 用户4 -->
+        <circle cx="65" cy="65" r="6" />
+        <path d="M 58,75 Q 65,72 72,75 L 72,80 L 58,80 Z" />
+    </g>
+    
+    <!-- 连接线 -->
+    <g stroke="url(#groupCallGradient)" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="2,2">
+        <line x1="21" y1="25" x2="32" y2="35" />
+        <line x1="21" y1="55" x2="32" y2="45" />
+        <line x1="59" y1="15" x2="48" y2="25" />
+        <line x1="59" y1="65" x2="48" y2="55" />
+    </g>
+    
+    <!-- 群呼标识 -->
+    <circle cx="25" cy="15" r="8" fill="#ef4444" />
+    <text x="25" y="19" text-anchor="middle" font-size="8" fill="white" font-weight="bold">群</text>
+</svg>
